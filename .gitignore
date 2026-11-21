@@ -1,0 +1,3 @@
+*.exe
+*.tbkr
+!src/patchdata.tbkr
