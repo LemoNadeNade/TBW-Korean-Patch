@@ -25,12 +25,12 @@ Steam판 [Tactical Breach Wizards](https://store.steampowered.com/app/1043810/)�
 
 ## 받기
 
-[Releases](../../releases/latest)에서 `TBW_KR_Patcher_v1.0.0.exe`를 받으세요. 실행 파일 하나에 번역 데이터가 모두 들어 있습니다.
+[Releases](../../releases/latest)에서 `TBW_KR_Patcher_v1.0.1.exe`를 받으세요. 실행 파일 하나에 번역 데이터가 모두 들어 있습니다.
 
 ## 설치
 
 1. 게임을 종료합니다.
-2. `TBW_KR_Patcher_v1.0.0.exe`를 실행합니다.
+2. `TBW_KR_Patcher_v1.0.1.exe`를 실행합니다.
    게임 폴더는 자동으로 찾습니다. 못 찾으면 Steam에서 게임 → 관리 → 로컬 파일 보기로 연 폴더를 창에 끌어다 놓고 Enter를 누르세요.
 3. `1`(설치)을 고르고 `Y`를 누릅니다.
 
@@ -62,10 +62,10 @@ Steam의 **게임 파일 무결성 확인**으로도 되돌릴 수 있습니다.
 
 **"Windows의 PC 보호" 창이 떠요.**
 서명되지 않은 프로그램이라 뜨는 경고입니다. `추가 정보` → `실행`을 누르세요.
-받은 파일이 바뀌지 않았는지는 PowerShell에서 `Get-FileHash .\TBW_KR_Patcher_v1.0.0.exe`로 확인할 수 있습니다.
+받은 파일이 바뀌지 않았는지는 PowerShell에서 `Get-FileHash .\TBW_KR_Patcher_v1.0.1.exe`로 확인할 수 있습니다.
 
 ```
-SHA-256: 5081c856a01ac289b9306ad2f4d57b63a1499b457770e5db96b7f1c272b88b59
+SHA-256: a6135659f0a5fddc612136832f2e1021874dec17b0cf7d1ff560b79fd6276fa7
 ```
 
 **패처가 무엇을 하나요?**
@@ -95,10 +95,10 @@ SHA-256: 5081c856a01ac289b9306ad2f4d57b63a1499b457770e5db96b7f1c272b88b59
 
 ```sh
 cd src
-./build.sh path/to/TBW_KR_v1.0.0.tbkr   # Windows용 TBW_KR_Patcher.exe 생성
+./build.sh path/to/TBW_KR_v1.0.1.tbkr   # Windows용 TBW_KR_Patcher.exe 생성
 ```
 
-번역 데이터 패키지(`TBW_KR_v1.0.0.tbkr`)는 Releases에 함께 올려 두었습니다. Go 1.24.7로 빌드하면 Releases의 exe와 SHA-256이 똑같이 나옵니다. 패키지 형식은 [`docs/FORMAT.md`](docs/FORMAT.md)에 설명되어 있습니다.
+번역 데이터 패키지(`TBW_KR_v1.0.1.tbkr`)는 Releases에 함께 올려 두었습니다. Go 1.24.7로 빌드하면 Releases의 exe와 SHA-256이 똑같이 나옵니다. 패키지 형식은 [`docs/FORMAT.md`](docs/FORMAT.md)에 설명되어 있습니다.
 
 ## 라이선스
 

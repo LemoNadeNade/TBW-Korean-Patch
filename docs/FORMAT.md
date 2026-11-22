@@ -14,7 +14,7 @@ payload/*.bin          한국어 글꼴 에셋과 글꼴 아틀라스 텍스처
 {
   "format": "tbwkr-1",
   "name": "Tactical Breach Wizards 비공식 한국어 패치",
-  "version": "v1.0.0",
+  "version": "v1.0.1",
   "files": [
     {
       "path": "level37",                 // Tactical Breach Wizards_Data 기준 경로

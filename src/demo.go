@@ -9,7 +9,7 @@ import (
 // Preview mode: shows every screen of the patcher with simulated work.
 // It never opens game files for writing.
 
-const demoVersion = "v1.0.0"
+const demoVersion = "v1.0.1"
 
 func sleepMs(ms int) { time.Sleep(time.Duration(ms) * time.Millisecond) }
 
