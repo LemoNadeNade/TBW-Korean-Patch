@@ -1,0 +1,54 @@
+name: 오역·버그 제보
+description: 오역이나 어색한 문장, 영어로 남은 곳, 글자 깨짐, 패처 오류를 알려 주세요.
+title: "[제보] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        제보 고맙습니다! 능력·특성 이름, 적 병종 이름처럼 **일부러 영어로 남겨 둔 것**이 있어요.
+        먼저 README의 [먼저 읽어 주세요](https://github.com/LemoNadeNade/TBW-Korean-Patch#먼저-읽어-주세요)를 확인해 주세요.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 어떤 문제인가요?
+      options:
+        - 오역 · 어색한 문장
+        - 영어로 남은 곳
+        - 글자 깨짐 · 표시 문제
+        - 패처 오류
+        - 기타
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 어느 화면인가요?
+      placeholder: "예: 2장 첫 임무 대화, 특성 화면, 설정 → 조작 옵션"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 지금 나오는 문장
+      description: 화면에 나온 그대로 적어 주세요.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 이렇게 바꾸면 좋겠어요 (선택)
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 스크린샷
+      description: 이미지를 여기에 끌어다 놓으면 첨부됩니다. Steam에서는 F12로 찍을 수 있어요.
+  - type: input
+    id: version
+    attributes:
+      label: 패처 버전
+      description: 패처 첫 화면에 나오는 버전이에요.
+      placeholder: v1.0.0
+  - type: textarea
+    id: log
+    attributes:
+      label: 패처 화면 내용 (패처 오류일 때)
+      description: 오류가 난 패처 창의 내용을 복사해 붙여 넣어 주세요.
+      render: text
